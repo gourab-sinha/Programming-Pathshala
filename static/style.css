@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #404040;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 10%;
+}
+.footer_design{
+    text-align: center;
+}
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    block-size: fit-content;
+    max-height: 25px;
+    max-width: 300px;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9
+}
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.home_content{
+    display: flex;
+    width: 100%;
+}
+.home_content .intro{
+    flex: 1;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Noto Serif', serif;
+    background: #404040;
+}
+.home_content .contents{
+    background: #404040;
+}
+/*Testimonials*/
+.testimonials{
+    display: flex;
+    width: 100%;
+}
+.photos{
+    margin-right: auto;
+    block-size: fit-content;
+    max-height: 50px;
+    max-width: 50px;
+}
+.testimonials .record{
+    flex: 1;
+    text-align: left;
+    color: black;
+    padding: 10px;
+    float: left;
+    font-family: 'Bree Serif', serif;
+}

@@ -1,0 +1,72 @@
+<style>
+    .footer{
+    background: black;
+    bottom: 0;
+    position: relative;
+    height: 150px;
+    width: 100%;
+}
+    .footer .footer-content{
+        display: flex;
+        color: white;
+        position: absolute;
+        width: 100%;
+    }
+    .footer .footer-content .footer-section{
+        flex: 1;
+        background: black;
+        text-align: center;
+        padding: 25px;
+    }
+    .footer .footer-content .footer-section .link{
+        list-style-type: none;
+        padding: 5px;
+        background: black;
+        color: white;
+    }
+    .footer .footer-bottom{
+        background: #f2f2f2;
+        color: black;
+        text-align: center;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+    }
+    .contact_form{
+        background: black;
+        padding: 5px;
+        text-align: center;
+        color: white;
+    }
+</style>
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-section social-media">Social Media
+            <ul class="link">
+                <li class="link"><a class="link" href="#">Facebook</a></li>
+                <li class="link"><a class="link" href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="footer-section team">Team
+            <ul class="link">
+                <li class="link"><a class="link" href="#">Anoop Garg</a></li>
+                <li class="link"><a class="link" href="#">Vivekanand Vivek</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-form">Contact Us
+            <div class="link">
+                <form method="post" action="#">
+                    {% csrf_token %}
+                    <ul class="link">
+                        <li class="contact_form">Query: <input type="text" placeholder="Please writer your query" name="Query" /></li>
+                        <li class="contact_form">Email: <input type="email" placeholder="example@example.com" name="Email"/></li>
+                        <li class="contact_form"><input type="submit" name="Submit"/></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; Programming Pathshala
+    </div>
+</div>
